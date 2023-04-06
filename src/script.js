@@ -42,15 +42,14 @@ window.addEventListener("dblclick", () => {
     if (canvas.requestFullscreen) {
       canvas.requestFullscreen();
     } else if (canvas.webkitRequestFullscreen) {
-        canvas.webkitRequestFullscreen();
+      canvas.webkitRequestFullscreen();
     }
   } else {
-    if(document.exitFullscreen){
-        document.exitFullscreen();
-    } else if (document.webkitExitFullscreen){
-        document.webkitExitFullscreen();
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
     }
-    
   }
 });
 
